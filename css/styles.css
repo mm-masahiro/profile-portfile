@@ -20,3 +20,23 @@ body {
 .top {
     display: block;
 }
+
+.bottom {
+    margin-top: 100px;
+}
+
+.topic {
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 40px;
+}
+
+.list-topic {
+    text-decoration: none;
+    color: #000;
+}
+
+.job-p {
+    margin-left: 20px;
+}
