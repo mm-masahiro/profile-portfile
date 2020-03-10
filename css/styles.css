@@ -1,28 +1,21 @@
-body{
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap');
+body {
+    font-family: 'Josefin Sans';
     margin-left: 200px;
 }
 
-p{
-    /* text-align: center; */
+.top-p {
     margin-left: 20px;
     display: block;
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
 }
 
-.top img{
+.top img {
     height: 300px;
     width: 250px;
     margin-right: 20px;
-}
-
-.top{
-    display: block;
-}
-
-
-.top-img{
     float: left;
+}
+
+.top {
+    display: block;
 }
