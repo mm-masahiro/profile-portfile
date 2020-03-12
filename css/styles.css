@@ -1,3 +1,46 @@
-p{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap');
+body {
+    font-family: 'Josefin Sans';
+    margin-left: 200px;
+}
+
+.top-p {
+    margin-left: 20px;
+    display: block;
+    font-size: 15px;
+}
+
+.top img {
+    height: 420px;
+    width: 280px;
+    margin-right: 20px;
+    float: left;
+}
+
+.top {
+    display: block;
+}
+
+.bottom {
+    margin-top: 100px;
+}
+
+.topic {
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 40px;
+}
+
+.list-topic {
+    text-decoration: none;
+    color: #000;
+}
+
+.job-p {
+    margin-left: 20px;
+}
+
+.return-top {
+    text-decoration: none;
 }
