@@ -4,14 +4,21 @@ body {
     margin-left: 200px;
 }
 
+<<<<<<< HEAD
 .top p{
+=======
+.top-p {
+>>>>>>> master
     margin-left: 20px;
     display: block;
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 .top img {
     height: 420px;
     width: 280px;
@@ -23,7 +30,11 @@ body {
     display: block;
 }
 
+<<<<<<< HEAD
 .contents {
+=======
+.bottom {
+>>>>>>> master
     margin-top: 100px;
 }
 
@@ -49,4 +60,11 @@ body {
 
 h2 {
     margin-top: 80px;
+<<<<<<< HEAD
+=======
+}
+
+.return-top {
+    text-decoration: none;
+>>>>>>> master
 }
