@@ -5,20 +5,27 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .top p{
 =======
 .top-p {
 >>>>>>> master
+=======
+.top-p {
+>>>>>>> 6f26799f23299672360edd6ac4f78101f95da8e9
     margin-left: 20px;
     display: block;
     font-size: 15px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> master
+=======
+>>>>>>> 6f26799f23299672360edd6ac4f78101f95da8e9
 .top img {
     height: 420px;
     width: 280px;
@@ -31,10 +38,14 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contents {
 =======
 .bottom {
 >>>>>>> master
+=======
+.bottom {
+>>>>>>> 6f26799f23299672360edd6ac4f78101f95da8e9
     margin-top: 100px;
 }
 
@@ -55,6 +66,17 @@ body {
 }
 
 .return a {
+<<<<<<< HEAD
+=======
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.return-top {
+>>>>>>> 6f26799f23299672360edd6ac4f78101f95da8e9
     text-decoration: none;
 }
 
