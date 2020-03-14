@@ -41,6 +41,14 @@ body {
     margin-left: 20px;
 }
 
+.return a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
 .return-top {
     text-decoration: none;
 }
