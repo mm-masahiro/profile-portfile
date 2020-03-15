@@ -5,8 +5,10 @@ module.exports = {
     // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
     mode: 'development',
     // エントリーポイントの設定
-    // entry:'../js/index.js',
-      // 出力の設定
+    entry: {
+        main: './src/index.js'
+    },
+     // 出力の設定
     output: {
          //  出力ファイルのディレクトリ名
         path: `${__dirname}/dist`,
