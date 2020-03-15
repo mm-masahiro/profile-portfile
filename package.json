@@ -1,0 +1,24 @@
+{
+  "name": "portfolio1",
+  "version": "1.0.0",
+  "description": "https://user-images.githubusercontent.com/61375806/76520633-a1325300-64a6-11ea-8604-205e0d83ed92.png",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mm-masahiro/profile-portfile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mm-masahiro/profile-portfile/issues"
+  },
+  "homepage": "https://github.com/mm-masahiro/profile-portfile#readme"
+}
