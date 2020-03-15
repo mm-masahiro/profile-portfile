@@ -9,8 +9,8 @@ module.exports = {
       // 出力の設定
     output: {
          //  出力ファイルのディレクトリ名
-        path: `${__dirname}/Portfolio1`,
+        path: `${__dirname}/dist`,
          // 出力ファイル名
-        filename: "../dist/main.js"
+        filename: "main.js"
     }
 };
