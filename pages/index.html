@@ -3,33 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>My profile</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <!-- <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/styles2.css"> -->
+        <link rel="stylesheet" href="src/styles.css">
+        <link rel="stylesheet" href="src/styles2.css">
     </head>
 
     <body>
-        <h1 class="top">My profile</h1>
-        <div class="top_page">
-            <div class="top_page_content">
-                <img src="img/top.jpeg" class="top_img">
-                <div>
-                    <P>こんにちは！岡山県出身で現在東京で働いているまさひろです！</p>
-                    <div class="top_page_content_row">
-                        <p>＜仕事＞</p>
-                        <p>証券会社で営業をしています。</p>
-                    </div>
-                    <div class="top_page_content_row">
-                        <p>＜性格＞</p>
-                        <p>負けず嫌いで成長意欲があります</p>
-                    </div>
-                    <div class="top_page_content_row">
-                        <p>＜これまで＞</p>
-                        <div>
-                            <p>2015.3 岡山県の高校卒業</p>
-                            <p>2015.4〜2019.3 香川大学　経済学部</p>
-                            <p>2019.4〜 みずほ証券株式会社</p>
+        <div>
+            <div class="page_head">
+                <div class="page_head_title">My profile</div>
+                <div class="page_head_git">
+                <a href="https://github.com/mm-masahiro" target="_blank" link="noopener norefferrer">
+                    <img class="button_git" src="img/github.png">
+                </a>
+                </div>
+            </div>
+
+            <div class="page_body">
+                <div class="page_body_text">
+                    <img src="img/top.jpeg" class="top_img">
+                    <div>
+                        <P>こんにちは！岡山県出身で現在東京で働いているまさひろです！</p>
+                        <div class="top_page_content_row">
+                            <p>＜仕事＞</p>
+                            <p>証券会社で営業をしています。</p>
+                        </div>
+                        <div class="top_page_content_row">
+                            <p>＜性格＞</p>
+                            <p>負けず嫌いで成長意欲があります</p>
+                        </div>
+                        <div class="top_page_content_row">
+                            <p>＜これまで＞</p>
+                            <div>
+                                <p>2015.3 岡山県の高校卒業</p>
+                                <p>2015.4〜2019.3 香川大学　経済学部</p>
+                                <p>2019.4〜 みずほ証券株式会社</p>
+                            </div>
                         </div>
                     </div>
-                    
                     <div class="top_page_content_row">
                         <p>＜今後の展望＞</p>
                         <p>自分が常に成長でき、かつ今後の市場の発展性のある環境に身をおきたいため
@@ -41,18 +53,40 @@
                     </div>
                     
                 </div>    
-            </div>
-            <div class="contents">
-                <div>
-                    <ul class="topic">
-                        <li><a class="list-topic" href="job.html">Job</a></li>
-                        <li><a class="list-topic" href="student.html">Student</a></li>
-                        <li><a class="list-topic" href="hobby.html">Hobby</a></li>
-                    </ul>
+                <div class="page_body_list">
+                    <div class="list_title">リスト</div>
+                    <div class="page_body_list_profile">
+                        <!-- <div class="page_body_list_profile_icon"> -->
+                            <img src="img/top.jpeg" class="icon">    
+                        <!-- <div> -->
+                        <div class="page_body_list_profile_text">Profile</div>
+                    </div>
+                    <div class="page_body_list_job">
+                        <!-- <div class="page_body_list_job_icon"><div> -->
+                            <img src="img/mizuho.jpg" class="icon">
+                            <div class="page_body_list_job_text">Job</div>
+                        </div>
+                    <div class="page_body_list_student">
+                        <!-- <div class="page_body_list_student_icon"><div> -->
+                            <img src="img/student1.jpeg" class="icon">
+                            <div class="page_body_list_student_text">Student</div>
+                        </div>
+                    <div class="page_body_list_hobby">
+                        <!-- <div class="page_body_list_hobby_icon"> -->
+                            <img src="img/Hobby1.jpeg" class="icon">    
+                        <!-- <div> -->
+                        <div class="page_body_list_hobby_text">Hobby</div>    
+                    </div>
+                </div>
+                </div>  
+                        
+                <div class="page_bottom">
+                    <div class="page_bottom_slide"></div>
                 </div>
             </div>
-        </div>
 
-        
+            <script src="src/main.js">
+            </script>
+        </div>
     </body>
 </html>
