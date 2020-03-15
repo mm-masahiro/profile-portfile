@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.js\");\nconsole.log(\"I'm masahiro!!\");\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/sub.js":
+/*!********************!*\
+  !*** ./src/sub.js ***!
+  \********************/
+/*! exports provided: hoge */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"hoge\", function() { return hoge; });\nconst hoge = () => {\n    console.log(\"this is sub!!!\");\n}\n\n//# sourceURL=webpack:///./src/sub.js?");
 
 /***/ })
 
