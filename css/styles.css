@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap');
-body {
-    font-family: 'Josefin Sans';
-    margin-left: 200px;
-}
 
-/* ごり */
 .top-p {
     margin-left: 20px;
     display: block;
     font-size: 15px;
-}
+} */
 
-.top img {
+
+.top_img {
     height: 420px;
     width: 280px;
     margin-right: 20px;
@@ -19,10 +15,36 @@ body {
 }
 
 .top {
-    display: block;
+    margin-left: 50px;
 }
 
-.bottom {
+.top_page {
+    font-family: 'Josefin Sans';
+    /* margin-left: 200px; */
+    display: block;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media screen and (max-width:480px) { 
+    .top_page_content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.top_page_content {
+    display: flex;
+}
+
+.top_page_content_row {
+    /* display: flex;   */
+}
+
+.contents {
     margin-top: 100px;
 }
 
@@ -31,6 +53,8 @@ body {
     justify-content: space-evenly;
     display: flex;
     font-size: 40px;
+    margin-right: 150px;
+
 }
 
 .list-topic {
@@ -38,18 +62,59 @@ body {
     color: #000;
 }
 
-.job-p {
+.job_text {
     margin-left: 20px;
 }
 
-.return a {
+.return {
     text-decoration: none;
+    color: #fff;
+    margin-left: 150px;
+    margin-top: 500px;
 }
 
-h2 {
+.return_top {
+    margin-top: 60px;
+}
+
+.job_topic {
     margin-top: 80px;
 }
 
-.return-top {
-    text-decoration: none;
+
+/* .job_image {
+    width: 100%;
+    height: 300px;
+} */
+
+.job_page {
+    /* margin-left: 200px;   */
+    color: #fff;
+    background-color: #fff;
+    /* opacity: 0.3; */
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 90%;
+    /* margin-left: 200px; */
+    color: #fff;
+    background-color: #fff;
+    /* opacity: 0.3; */
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    margin: 0px;
+    margin: 0 auto;
+}
+
+.job_title {
+    margin-left: 50px;
+    font-size: 60px;
+}
+
+.job {
+    background-image: url("../img/NY2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(225, 225, 225, 0.3);
 }
