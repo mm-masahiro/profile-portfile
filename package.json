@@ -10,10 +10,12 @@
   "devDependencies": {
     "css-loader": "^3.4.2",
     "style-loader": "^1.1.3",
-    "stylelint": "^13.2.1"
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended-scss": "^4.2.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint:css": "stylelint ./src/css/styles.scss"
   },
   "repository": {
     "type": "git",
