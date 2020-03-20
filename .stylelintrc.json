@@ -1,0 +1,9 @@
+{  
+    "rules": {
+        "color-no-invalid-hex": [true],
+        "color-named": "never",
+        "color-hex-case": ["lower"],
+        "unit-no-unknown": [true],
+        "no-duplicate-at-import-rules": [true]
+    }
+}
