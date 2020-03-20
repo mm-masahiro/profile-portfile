@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "lint:css": "stylelint ./src/css/styles.scss"
+    "lint:css": "stylelint ./src/css"
   },
   "repository": {
     "type": "git",
