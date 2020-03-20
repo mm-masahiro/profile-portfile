@@ -1,13 +1,12 @@
 ---
-name: タスク
-about: タスクの管理
+name: Task
+about: Task manage
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-＃タスク名
-
+#タスク名
 
 ＃どんな機能か
