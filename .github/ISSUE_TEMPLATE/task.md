@@ -2,7 +2,7 @@
 name: Task
 about: Task manage
 title: ''
-labels: ''
+labels: 'test'
 assignees: ''
 
 ---
