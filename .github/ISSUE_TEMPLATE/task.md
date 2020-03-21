@@ -2,11 +2,11 @@
 name: Task
 about: Task manage
 title: ''
-labels: 'test'
+labels: test
 assignees: ''
 
 ---
+
 ## どんな機能か
 
 ## 参考リンク(あれば）
-
