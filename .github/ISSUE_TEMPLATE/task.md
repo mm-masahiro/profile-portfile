@@ -1,6 +1,6 @@
 ---
 name: Task
-about :ask manage
+about :Task manage
 title: ''
 labels: ''
 assignees: ''
