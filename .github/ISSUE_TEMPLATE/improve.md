@@ -2,7 +2,7 @@
 name: Improve
 about: Improve functions
 title: ''
-labels: 'label'
+labels: 'improve'
 assignees: ''
 
 ---
