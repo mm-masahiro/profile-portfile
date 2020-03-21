@@ -70,6 +70,10 @@
     margin-top: 60px;
 }
 
+.list_page-jump {
+    text-decoration: none;
+}
+
 .job_topic {
     margin-top: 80px;
 }
@@ -110,4 +114,55 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(225, 225, 225, 0.3);
+}
+
+.school_body_contents {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.school_body_contents_club {
+    display: flex;
+    justify-content: space-between;
+    background-color: crimson;
+    height: 33%;
+}
+
+.school_body_contents_drink {
+    display: flex;
+    justify-content: space-between;
+    background-color: cyan;
+    height: 33%;
+}
+
+.school_body_contents_activity {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    height: 33%;
+}
+
+.school_body_header {
+    height: 10%;
+}
+
+.school_body_contents {
+    height: 80%;
+}
+
+.school_body_footer {
+    height: 10%;
+}
+
+.school {
+    height: 100%;
+}
+
+.school_body {
+    height: 100%;
+}
+
+.school_body_top {
+    height: 100%;
 }
