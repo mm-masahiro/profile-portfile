@@ -1,8 +1,8 @@
 ---
-name: Task
-about: Task manage
+name: Feature
+about: 新規機能とかとか
 title: ''
-labels: function
+labels: 'feature'
 assignees: ''
 
 ---
