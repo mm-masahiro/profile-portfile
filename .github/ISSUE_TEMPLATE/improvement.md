@@ -1,8 +1,8 @@
 ---
-name: Improve
-about: Improve functions
+name: Improvement
+about: 改善系のISSUE
 title: ''
-labels: 'improve'
+labels: 'improvement'
 assignees: ''
 
 ---
