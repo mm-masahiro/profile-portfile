@@ -2,5 +2,5 @@ console.log("I'm masahiro!!");
 
 import { hoge } from "./sub";
 
-import "../src/css/styles.scss";
-import "../src/css/styles2.scss";
+import './css/styles.scss';
+import './css/styles2.scss';
