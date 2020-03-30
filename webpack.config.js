@@ -11,7 +11,6 @@ module.exports = {
      // 出力の設定
     output: {
          //  出力ファイルのディレクトリ名
-         
         path: `${__dirname}/public`,
          // 出力ファイル名
         filename: "main.js"
