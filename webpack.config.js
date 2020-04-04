@@ -14,22 +14,28 @@ module.exports = {
         path: `${__dirname}/public`,
          // 出力ファイル名
         filename: "main.js"
-    }
-};
-
-module.exports = {
-    mode: "production",
+    },
     module: {
         rules: [
             {
-                test: /\.css/,
+                test: /\.scss/,
                 use: [
                     "style-loader",
                     {
                         loader: "css-loader",
-                        options: { url: false }
+                        options: {
+                            url: true,
+                            importLoaders: 2
+                        }
+                    },
+                    {
+                        loader: "sass-loader",
                     }
                 ]
+            },
+            {
+                test: /\.(gif|png|jpeg|svg)$/,
+                loader: "url-loader"
             }
         ]
     }
