@@ -15,6 +15,14 @@ module.exports = {
          // 出力ファイル名
         filename: "main.js"
     },
+    // webpack-dev-serverを立ち上げた時のドキュメントルートを設定
+    // ここではdistディレクトリのindex.htmlにアクセスするよう設定している
+    devServer: {
+        contentBase: path.join(`${__dirname}/public`), 
+        open: true,
+        hot: true,
+        port: 8080,
+    },
     module: {
         rules: [
             {
