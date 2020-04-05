@@ -10,7 +10,7 @@
 - Github Actions
 
 ## 今後導入していく技術
-- Vue.js
+- Vue.js or React
 - Typescript
 - e2eテスト
 - CI/CD
