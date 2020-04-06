@@ -78,28 +78,17 @@
     margin-top: 80px;
 }
 
-
-/* .job_image {
-    width: 100%;
-    height: 300px;
-} */
-
 .job_page {
-    /* margin-left: 200px;   */
     color: #fff;
     background-color: #fff;
-    /* opacity: 0.3; */
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     width: 90%;
-    /* margin-left: 200px; */
     color: #fff;
     background-color: #fff;
-    /* opacity: 0.3; */
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    /* justify-content: end; */
     margin: 0px;
     margin: 0 auto;
 }
@@ -114,4 +103,107 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgba(225, 225, 225, 0.3);
+}
+
+.school {
+    height: 200vh;
+    width: 100%;
+}
+
+.school_body {
+    height: 100%;
+    width: 100%;
+}
+
+// .school_body_top {
+//     height: 100%;
+//     width: 100%;
+// }
+
+.school_body_header {
+    height: 5%;
+    width: 100%;
+}
+
+.school_body_contents {
+    height: 90%;
+    width: 100%;
+}
+
+.school_body_footer {
+    height: 5%;
+    margin-top: 30px;
+}
+
+.school_body_contents_club {
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    width: 100%;
+    background-color: #3484cb;
+}
+
+.school_body_contents_club_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school_body_contents_image {
+    width: 50%;
+}
+
+.school_body_contents_image_club {
+    width: 100%;
+    height: 80%;
+}
+
+.school_body_contents_drink {
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    width: 100%;
+    background-color: #eb5336;
+}
+
+.school_body_contents_drink_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school_body_contents_activity {
+    display: flex;
+    flex-direction: column;
+    height: 33%;
+    background-color: #faea46;
+}
+
+.school_body_contents_activity_contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school_body_footer_return {
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 30px;
+    bottom: 0;
+}
+
+.school_body_contents_image_drink {
+    height: 80%;
+    width: 100%;
+    right: 0;
+}
+
+.school_body_contents_image {
+    right: 0;
+}
+
+.school_body_contents_text {
+    width: 70%;
+}
+
+.school_body_contents_image_active {
+    height: 90%;
+    width: 100%;
 }
