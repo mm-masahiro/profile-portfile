@@ -7,6 +7,11 @@
     }
 }
 
+.top {
+    width: 100%;
+    margin: 0;
+}
+
 .body {
     background-color: #b9b9b9;
 }
@@ -19,91 +24,141 @@
     opacity: 0.6;
     color: #fff;
     background-repeat: no-repeat;
+
+    div.body_head_title {
+        text-align: center;
+        color: #f4b052;
+        font-size: 100px;
+        opacity: 1;
+    }
+
+    div.body_head_menu {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
+
+    div.body_head_menu div {
+        height: 5px;
+        width: 30px;
+        background: #000;
+        position: absolute;
+    }
+
+    div.body_head_menu div:nth-of-type(1) {
+        top: 10px;
+    }
+
+    div.body_head_menu div:nth-of-type(3) {
+        top: 20px;
+    }
+
+    ul.body_head_menu_list_contents {
+        list-style: none;
+        position: absolute;
+        right: -60px;
+        top: 30px;
+        transition: 0.3s;
+        padding: 0;
+    }
+
+    ul.body_head_menu_list_contents.open {
+        right: 0;
+    }
+
 }
+
 
 .body_main {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 
+
     div.body_main_upside {
         display: flex;
-        text-align: center;
+        justify-content: center;
+        height: 200px;
+        position: relative;
 
         img.img_about{
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
         img.img_job {
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
         img.img_travel {
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
 
         p.text_about {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
 
         p.text_job {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
 
         p.text_travel {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
     }
 
     div.body_main_under {
         display: flex;
-        text-align: center;
+        justify-content: center;
+        height: 200px;
         position: relative;
 
         img.img_sports {
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
 
         img.img_caffee {
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
 
         img.img_career {
             width: 300px;
-            height: 200px;
+            height: 100%;
         }
         
         p.text_sports {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
 
         p.text_caffee {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
 
         p.text_career {
             position: absolute;
-            text-align: center;
             margin: 0;
             color: #fff;
+            top: 50%;
         }
     }
 }
@@ -111,11 +166,11 @@
 .body_footer {
     margin-top: 50px;
     text-align: center;
-    justify-content: space-evenly;
 
     div.body_footer_icon {
         border-radius: 20px;
         display: flex;
+        justify-content: center;
     }
         img.body_footer_icon_twitter {
             height: 30px;
