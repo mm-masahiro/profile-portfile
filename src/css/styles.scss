@@ -10,6 +10,7 @@
 .top {
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .body {
@@ -25,14 +26,14 @@
     color: #fff;
     background-repeat: no-repeat;
 
-    div.body_head_title {
+    .body_head_title {
         text-align: center;
         color: #f4b052;
         font-size: 100px;
         opacity: 1;
     }
 
-    div.body_head_menu {
+    .body_head_menu {
         height: 30px;
         width: 30px;
         position: absolute;
@@ -41,22 +42,22 @@
         cursor: pointer;
     }
 
-    div.body_head_menu div {
+    .body_head_menu div {
         height: 5px;
         width: 30px;
         background: #000;
         position: absolute;
     }
 
-    div.body_head_menu div:nth-of-type(1) {
+    .body_head_menu div:nth-of-type(1) {
         top: 10px;
     }
 
-    div.body_head_menu div:nth-of-type(3) {
+    .body_head_menu div:nth-of-type(3) {
         top: 20px;
     }
 
-    ul.body_head_menu_list_contents {
+    .body_head_menu_list_contents {
         list-style: none;
         position: absolute;
         right: -60px;
@@ -65,7 +66,7 @@
         padding: 0;
     }
 
-    ul.body_head_menu_list_contents.open {
+    .body_head_menu_list_contents.open {
         right: 0;
     }
 
@@ -78,40 +79,40 @@
     flex-direction: column;
 
 
-    div.body_main_upside {
+    .body_main_upside {
         display: flex;
         justify-content: center;
         height: 200px;
         position: relative;
 
-        img.img_about{
+        .img_about{
             width: 300px;
             height: 100%;
         }
-        img.img_job {
+        .img_job {
             width: 300px;
             height: 100%;
         }
-        img.img_travel {
+        .img_travel {
             width: 300px;
             height: 100%;
         }
 
-        p.text_about {
+        .text_about {
             position: absolute;
             margin: 0;
             color: #fff;
             top: 50%;
         }
 
-        p.text_job {
+        .text_job {
             position: absolute;
             margin: 0;
             color: #fff;
             top: 50%;
         }
 
-        p.text_travel {
+        .text_travel {
             position: absolute;
             margin: 0;
             color: #fff;
@@ -119,42 +120,42 @@
         }
     }
 
-    div.body_main_under {
+    .body_main_under {
         display: flex;
         justify-content: center;
         height: 200px;
         position: relative;
 
-        img.img_sports {
+        .img_sports {
             width: 300px;
             height: 100%;
         }
 
-        img.img_caffee {
+        .img_cafe {
             width: 300px;
             height: 100%;
         }
 
-        img.img_career {
+        .img_career {
             width: 300px;
             height: 100%;
         }
         
-        p.text_sports {
+        .text_sports {
             position: absolute;
             margin: 0;
             color: #fff;
             top: 50%;
         }
 
-        p.text_caffee {
+        .text_cafe {
             position: absolute;
             margin: 0;
             color: #fff;
             top: 50%;
         }
 
-        p.text_career {
+        .text_career {
             position: absolute;
             margin: 0;
             color: #fff;
@@ -167,20 +168,20 @@
     margin-top: 50px;
     text-align: center;
 
-    div.body_footer_icon {
+    .body_footer_icon {
         border-radius: 20px;
         display: flex;
         justify-content: center;
     }
-        img.body_footer_icon_twitter {
+        .body_footer_icon_twitter {
             height: 30px;
             width: 50px;
         }
-        img.body_footer_icon_github {
+        .body_footer_icon_github {
             height: 30px;
             width: 50px;
         }
-        img.body_footer_icon_wantedly {
+        .body_footer_icon_wantedly {
             height: 30px;
             width: 50px;
         }
