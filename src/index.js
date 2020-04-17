@@ -7,7 +7,11 @@ import './css/styles2.scss';
 
 var list = document.getElementById('list')
 
+// document.getElementById('show').addEventListener('click',function(){
+//     this.classList.toggle('open');
+//     document.getElementById('list').classList.toggle('open');
+// });
+
 document.getElementById('show').addEventListener('click',function(){
-    this.classList.toggle('open');
     document.getElementById('list').classList.toggle('open');
 });
