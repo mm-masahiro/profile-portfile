@@ -1,17 +1,7 @@
-import React from 'react';
+import React from "react";
 
-class Button extends React.Component {
-  constructor () {
-    super()
-  }
-
-  render () {
-    return (
-      <div>
-        hello
-      </div>
-    )
-  }
+function Button() {
+  return <div>hello</div>;
 }
 
 export default Button;
