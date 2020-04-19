@@ -24,11 +24,13 @@
     "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js && npm run build:react",
+    "watch": "webpack --watch --config webpack.config.js",
     "start": "webpack-dev-server",
     "lint:css": "stylelint ./src/css",
     "precommit": "lint-staged",
-    "watch:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod"
+    "watch:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod",
+    "build:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod"
   },
   "husky": {
     "hooks": {
