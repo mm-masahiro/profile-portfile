@@ -27,7 +27,8 @@
     "build": "webpack --config webpack.config.js",
     "start": "webpack-dev-server",
     "lint:css": "stylelint ./src/css",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "watch:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod"
   },
   "husky": {
     "hooks": {
