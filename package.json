@@ -30,7 +30,7 @@
     "lint:css": "stylelint ./src/css",
     "precommit": "lint-staged",
     "watch:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod",
-    "build:react": "npx babel --watch src/**/*.jsx --out-dir public --presets react-app/prod"
+    "build:react": "npx babel src/**/*.jsx --out-dir public --presets react-app/prod"
   },
   "husky": {
     "hooks": {
