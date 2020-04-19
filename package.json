@@ -4,6 +4,8 @@
   "description": "https://user-images.githubusercontent.com/61375806/76520633-a1325300-64a6-11ea-8604-205e0d83ed92.png",
   "main": "index.js",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "lint-staged": "^10.1.2",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
