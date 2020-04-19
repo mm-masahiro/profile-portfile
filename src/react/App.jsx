@@ -7,7 +7,7 @@ const element = <h1 className="greeting">Hello, world!</h1>;
 class App extends React.Component {
   constructor() {
     super();
-    this.state.liked = false;
+    this.state = { liked: false };
   }
 
   render() {
