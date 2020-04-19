@@ -1,7 +1,5 @@
 .DS_Store
 node_modules
-public/main.js
-public/src
-public/img
+public
 package-lock.json
 editorconfig
