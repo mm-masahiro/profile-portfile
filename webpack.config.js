@@ -50,7 +50,7 @@ module.exports = {
   },
   plugins: [
     new CopyPlugin([
-      { from: `${__dirname}/public`, to: `${__dirname}/test` }
+      { from: `${__dirname}/src/img`, to: `${__dirname}/public/img` }
     ])
   ]
 };
