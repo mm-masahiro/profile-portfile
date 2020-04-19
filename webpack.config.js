@@ -9,8 +9,8 @@ module.exports = {
 
   // エントリーポイントの設定
   entry: {
-    main: './src/js/index.js',
-    app: './src/jsx/app.js'
+    main: `${__dirname}/src/js/index.js`,
+    app: `${__dirname}/src/react/app.js`
   },
 
 
