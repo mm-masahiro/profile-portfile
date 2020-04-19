@@ -1,27 +1,31 @@
-import React from 'react';
-const element = <h1 className='greeting'>Hello, world!</h1>
+import React from "react";
 import Button from "./Button";
 import Welcome from "./Welcome";
 
+const element = <h1 className="greeting">Hello, world!</h1>;
+
 class App extends React.Component {
-  constructor () {
-    super()
-    this.state = { liked: false }
+  constructor() {
+    super();
+    this.state.liked = false;
   }
 
-  render () {
-    if (this.state.liked) {
-      return <h1>You liked this.</h1>
+  render() {
+    const { liked } = this.state;
+    if (liked) {
+      return <h1>You liked this.</h1>;
     }
 
     return (
       <div>
         <Welcome name="Sara" />
         {element}
-        <Button/>
-        <button onClick={() => this.setState({ liked: true })}>Like</button>
+        <Button />
+        <button type="button" onClick={() => this.setState({ liked: true })}>
+          Like
+        </button>
       </div>
-    )
+    );
   }
 }
 
