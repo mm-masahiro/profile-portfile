@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   // エントリーポイントの設定
   entry: {
-    main: './src/index.js'
+    main: './src/js/index.js'
   },
   // 出力の設定
   output: {

@@ -1,7 +1,7 @@
 console.log("I'm masahiro!!");
 
-import './css/styles.scss';
-import './css/styles2.scss';
+import '../css/styles.scss';
+import '../css/styles2.scss';
 
 
 // document.getElementById('show').addEventListener('click',function(){
