@@ -6,7 +6,7 @@
     "jsx": "react"    
   },
   "include": [
-    "src/react"
+    "src"
   ],
   "compileOnSave": false
 }
