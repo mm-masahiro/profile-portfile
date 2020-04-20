@@ -6,35 +6,17 @@ import Welcome from "./Welcome";
 
 const element = <h1 className="greeting">Hello, world!!!!!!!!!</h1>;
 
-// interface AppState {
-//   liked: boolean
-// }
+class App extends React.Component<{
+  message: string
+}> {
 
-// class App extends React.Component<AppState, {}> {
-//   constructor() {
-//     super(null);
-//     this.state = { liked: false };
-//   }
-
-//   render() {
-//     const { liked } = this.state;
-//     if (liked) {
-//       return <h1>You liked this.</h1>;
-//     }
-
-//     return (
-//       <div>
-//         <Welcome name="Sara" />
-//         {element}
-//         <Button />
-//         <button type="button" onClick={() => this.setState({ liked: true })}>
-//           Like
-//         </button>
-//       </div>
-//     );
-//   }
-// }
+  render() {
+    return (
+      <div>{this.props.message}</div>
+    )
+  }
+}
 
 // export default App;
 
-render(element, document.getElementById('app'));
+render(<App message="this is props" />, document.getElementById('app'));
