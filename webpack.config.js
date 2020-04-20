@@ -63,7 +63,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".jsx", ".js", "tsx", "ts"],
+    extensions: [".tsx", ".jsx", ".js", ".ts"],
   },
 
   plugins: [
