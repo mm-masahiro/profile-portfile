@@ -1,4 +1,12 @@
 # profile-potfolio
+
+## 環境構築
+```
+npm install
+npm start
+```
+
+
 ## 完成イメージ図
 ### トップページ
 ![スクリーンショット 2020-04-11 12 52 57](https://user-images.githubusercontent.com/61375806/79034733-9aa51180-7bf3-11ea-923d-7c65dd16e543.png)
