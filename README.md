@@ -3,11 +3,7 @@
 ## 環境構築
 ```
 npm install
-
-## ↓はそれぞれ別タブで実行する必要がある
-npm run watch
-npm run watch:react
-npm run dev
+npm start
 ```
 
 

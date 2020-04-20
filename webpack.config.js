@@ -5,17 +5,24 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
   mode: 'development',
+
+
   // エントリーポイントの設定
   entry: {
-    main: './src/js/index.js'
+    main: `${__dirname}/src/js/index.js`,
+    app: `${__dirname}/src/react/app.js`
   },
+
+
   // 出力の設定
   output: {
     //  出力ファイルのディレクトリ名
     path: `${__dirname}/public/src`,
     // 出力ファイル名
-    filename: "main.js"
+    filename: "[name].js"
   },
+
+
   // webpack-dev-serverを立ち上げた時のドキュメントルートを設定
   // ここではdistディレクトリのindex.htmlにアクセスするよう設定している
   devServer: {
@@ -24,6 +31,8 @@ module.exports = {
     hot: true,
     port: 8080,
   },
+
+
   module: {
     rules: [
       {
@@ -45,9 +54,21 @@ module.exports = {
       {
         test: /\.(gif|png|jpeg|svg|jpg)$/,
         loader: "url-loader"
+      },
+      {
+        test: /\.jsx|js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
   },
+
+
+  resolve: {
+    extensions: ['.jsx', '.js']
+  },
+
+
   plugins: [
     new CopyPlugin([
       {
