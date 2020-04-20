@@ -8,12 +8,26 @@ const element = <h1 className="greeting">Hello, world!!!!!!!!!</h1>;
 
 class App extends React.Component<{
   message: string
+}, {
+  count: number
 }> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    }
+  }
 
   render() {
     return (
-      <div>{this.props.message}</div>
+      <div onClick={this.increment}>{this.props.message} {this.state.count}</div>
     )
+  }
+
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1
+    })
   }
 }
 
