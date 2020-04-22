@@ -45,7 +45,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js && npm run imagemin",
+    "build": "webpack --config webpack.config.js",
     "watch": "webpack --watch --config webpack.config.js",
     "start": "webpack-dev-server --open --config webpack.config.js",
     "lint:css": "stylelint ./src/css",
