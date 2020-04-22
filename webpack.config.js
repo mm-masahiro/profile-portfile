@@ -1,6 +1,7 @@
 // output.pathに絶対パスを指定する必要があるため、pathモジュールを読み込んでおく
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
   // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
@@ -67,6 +68,12 @@ module.exports = {
   },
 
   plugins: [
+    new CompressionPlugin({
+      test: /\.(css)|(js)$/,
+      compressionOptions: {
+        level: 9,
+      },
+    }),
     new CopyPlugin([
       {
         from: `${__dirname}/src/hobby.html`,
