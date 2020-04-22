@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   // モードの設定、v4系以降はmodeを指定しないと、webpack実行時に警告が出る
-  mode: "development",
+  mode: "production",
 
   // エントリーポイントの設定
   entry: {
@@ -68,10 +68,10 @@ module.exports = {
 
   plugins: [
     new CopyPlugin([
-      {
-        from: `${__dirname}/src/img`,
-        to: `${__dirname}/public/img`,
-      },
+      // {
+      //   from: `${__dirname}/src/img`,
+      //   to: `${__dirname}/public/img`,
+      // },
       {
         from: `${__dirname}/src/hobby.html`,
         to: `${__dirname}/public`,
