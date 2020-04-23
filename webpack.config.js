@@ -16,7 +16,7 @@ module.exports = {
   // 出力の設定
   output: {
     //  出力ファイルのディレクトリ名
-    path: `${__dirname}/public`,
+    path: `${__dirname}/nginx/www`,
     // 出力ファイル名
     filename: "[name].js",
   },
@@ -24,7 +24,7 @@ module.exports = {
   // webpack-dev-serverを立ち上げた時のドキュメントルートを設定
   // ここではdistディレクトリのindex.htmlにアクセスするよう設定している
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "nginx/www"),
     filename: "[name].js",
     port: 8080,
   },
@@ -77,23 +77,23 @@ module.exports = {
     new CopyPlugin([
       {
         from: `${__dirname}/src/hobby.html`,
-        to: `${__dirname}/public`,
+        to: `${__dirname}/nginx/www`,
       },
       {
         from: `${__dirname}/src/index.html`,
-        to: `${__dirname}/public`,
+        to: `${__dirname}/nginx/www`,
       },
       {
         from: `${__dirname}/src/job.html`,
-        to: `${__dirname}/public`,
+        to: `${__dirname}/nginx/www`,
       },
       {
         from: `${__dirname}/src/react.html`,
-        to: `${__dirname}/public`,
+        to: `${__dirname}/nginx/www`,
       },
       {
         from: `${__dirname}/src/student.html`,
-        to: `${__dirname}/public`,
+        to: `${__dirname}/nginx/www`,
       },
     ]),
   ],

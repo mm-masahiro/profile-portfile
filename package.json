@@ -51,7 +51,8 @@
     "start": "webpack-dev-server --open --config webpack.config.js",
     "lint:css": "stylelint ./src/css",
     "precommit": "lint-staged",
-    "imagemin": "gulp images"
+    "imagemin": "gulp images",
+    "deploy:gae": "npm run build && gcloud app deploy"
   },
   "husky": {
     "hooks": {
