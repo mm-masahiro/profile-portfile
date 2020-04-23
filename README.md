@@ -6,6 +6,9 @@ npm install
 npm start
 ```
 
+## Memo
+- nginxはGAE(Google App Engine)デプロイ用
+- publicはNetlifyでのデプロイ用
 
 ## 完成イメージ図
 ### トップページ
