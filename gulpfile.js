@@ -9,5 +9,21 @@ gulp.task("images", function () {
         progressive: true,
       })
     )
-    .pipe(gulp.dest("public/img"));
+    .pipe(gulp.dest("nginx/www/img"));
 });
+
+// var responsive = require('gulp-responsive')
+
+// gulp.task('default', function () {
+//   return gulp
+//     .src('src/img/*.{jpeg,jpg}')
+//     .pipe(
+//       responsive({
+//         'background-*.jpg': {
+//           width: 700,
+//           quality: 50
+//         },
+//       })
+//     )
+//     .pipe(gulp.dest('dist'))
+// })

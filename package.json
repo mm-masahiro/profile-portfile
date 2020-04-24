@@ -43,15 +43,18 @@
     "ts-loader": "^7.0.1",
     "typescript": "^3.8.3",
     "url-loader": "^4.0.0",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js && npm run imagemin",
-    "watch": "webpack --watch --config webpack.config.js",
-    "start": "webpack-dev-server --open --config webpack.config.js",
+    "build": "webpack --config webpack.config.production.js",
+    "build:prod-gae": "webpack --config webpack.config.production.gae.js && npm run imagemin",
+    "watch": "webpack --watch --config webpack.config.development.js",
+    "start": "webpack-dev-server --open --config webpack.config.development.js",
     "lint:css": "stylelint ./src/css",
     "precommit": "lint-staged",
-    "imagemin": "gulp images"
+    "imagemin": "gulp images",
+    "deploy:gae": "npm run build:prod-gae && cd nginx && gcloud app deploy --quiet"
   },
   "husky": {
     "hooks": {
