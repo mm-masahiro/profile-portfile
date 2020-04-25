@@ -47,7 +47,7 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.production.js  && npm run imagemin",
+    "build": "webpack --config webpack.config.production.js",
     "build:prod-gae": "webpack --config webpack.config.production.gae.js && npm run imagemin",
     "watch": "webpack --watch --config webpack.config.development.js",
     "start": "webpack-dev-server --open --config webpack.config.development.js",
