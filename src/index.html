@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>My profile</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     </head>
 
     <body class="top">
@@ -19,67 +20,172 @@
                 </div>
                 <div class="body_head_menu_list">
                     <ul class="body_head_menu_list_contents" id="list">
-                        <li>About</li>
-                        <li>Job</li>
-                        <li>Travel</li>
-                        <li>Sports</li>
-                        <li>Cafe</li>
-                        <li>Career</li>
+                        <li>
+                            <a class="body_head_menu_list_contents_link" href="#about">
+                            About
+                            </a>
+                        </li>
+                        <li>
+                            <a class="body_head_menu_list_contents_link" href="#job">
+                                Job
+                            </a>
+                        </li>
+                        <li>
+                            <a class="body_head_menu_list_contents_link" href="#hobby">
+                                Hobby
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             
-            <!-- メイン -->
-            <div class="body_main">
-                <!-- 上3つのリンク -->
-                <div class="body_main_upside">
-                    <!-- 自己紹介 -->
-                    <div>
-                        <p class="text_about">About</p>
-                        <img class="img_about" src="./img/about.jpeg">
-                    </div>
-                    <!-- 職歴 -->
-                    <div>
-                        <p class="text_job">Job</p>
-                        <img class="img_job" src="./img/ws.jpg">
-                    </div>
-                    <!-- 旅行 -->
-                    <div>
-                        <p class="text_travel">Travel</p>
-                        <img class="img_travel" src="./img/travel.jpg">
-                    </div>
+            <!-- リンク -->
+            <div class="body_page">
+                <div>
+                    <a href="#about">
+                        <p class="text_page">About</p>
+                        <img class="img_page" src="./img/about.jpeg">
+                    </a href="#about">
                 </div>
-
-                 <!-- 下３つのリンク -->
-                <div class="body_main_under">
-                    <!-- スポーツ -->
-                    <div>
-                        <p class="text_sports">Sports</p>
-                        <img class="img_sports" src="./img/hand.jpeg">
-                    </div>
-                    <!-- カフェ -->
-                    <div>
-                        <p class="text_cafe">Cafe</p>
-                        <img class="img_cafe" src="./img/cafe.jpg">
-                    </div>
-                    <!-- 目指してるキャリア -->
-                    <div>
-                        <p class="text_career">Career</p>
-                        <img class="img_career" src="./img/career.jpeg">
-                    </div>
+                <div>
+                    <a href="#job">
+                        <p class="text_page">Job</p>
+                        <img class="img_page" src="./img/ws.jpg">
+                    </a href="#job">
+                </div>
+                <div>
+                    <a href="#hobby">
+                        <p class="text_page">Hobby</p>
+                        <img class="img_page" src="./img/cafe.jpg">
+                    </a>
                 </div>
             </div>
+            
+            <!-- About -->
+            <section class="body_main">
+                <a id="about">
+                    <header class="body_main_header">
+                        <h1>About</h1>
+                    </header>
+                </a>
+                <div class="body_main_contents">
+                    <ul class="body_main_contents_list">
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Hand.jpeg">
+                            <span class="body_main_contents_list_colum_text">
+                                高校生の時にハンドボールを始め、大学生になっても部活に入り続けていました！
+                                <br>大学４回生の最後の大会の際の写真です。
+                            </span>
+                        </li>
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Mizuho.jpg">
+                            <span class="body_main_contents_list_colum_text">
+                                みずほ証券（株）に新卒で19年4月に入社しました。
+                                <br>営業として新規開拓に勤しんでいます。
+
+                            </span>
+                        </li>
+                    </ul>
+                    <p class="body_main_contents_text">
+                        こんにちは！都内で証券会社に勤めている森永 雅大と申します！岡山県出身で大学は香川大学だったのですが、支店配属が都内になり19年の4月に上京しました。
+                        <!-- みずほ証券に勤めており、主に法人やそのオーナー・社長をターゲットとした新規開拓に取り組んでいます。IT業界の成長生に魅力を感じ転職を考えています。 -->
+                        <br>学生の頃は、ハンドボール部に所属しており週4日以上の練習を４年間、最後までやり抜きました！また、キャプテンの経験もさせてもらい、チームの課題は何か、それを克服するためにどうすれば良いかということを常に考えながら練習に取り組みました。
+                        <br>幼い頃から負けず嫌いで、自分が「負けたくない」と感じたもの（部活のレギュラー争いや、好きな教科の勉強など）に対しては、結果を残せるように努めてきました。この性格もあってか、日々自分を成長させることのできる環境に身をおきたいと考えています。
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Job -->
+            <section class="body_main">
+                <a id="job">
+                    <header class="body_main_header">
+                        <h1>Job</h1>
+                    </header>
+                </a>
+                <div class="body_main_contents">
+                    <ul class="body_main_contents_list">
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Tosyo.jpg">
+                            <span class="body_main_contents_list_colum_text">
+                                東京という大きなマーケットで新規開拓に取り組んでいます！
+                                <br>大口案件を決められるように戦略を立てながら取り組んでいます。
+                            </span>
+                        </li>
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Job2.png">
+                            <span class="body_main_contents_list_colum_text">
+                                エンジニアへの転職をしたいと考えています！
+                                <br>それに向けて現在勉強中です。
+
+                            </span>
+                        </li>
+                    </ul>
+                    <p class="body_main_contents_text">
+                        2019年4月にみずほ証券（株）に入社しました。都内の支店配属になり、東京という大きなマーケットの中で法人やそのオーナー・社長を主なターゲットとした新規開拓に取り組んでいます。
+                        <br>新規開拓に取り組む際には、「戦略」ということを意識しながら取り組んでいます。アプローチの数だけではなく、そこに「ターゲティング」という要素も意識しながら新規開拓に取り組んでいます。
+                        現在はまだ、資金導入や商品販売という形で結果としては出てきてはおりませんが、大口の案件をいくつか見つけることができました。今期中に刈り取れるように今後も取り組んでいきます！
+                        <br>また、自分の将来を考えていく中で、より成長性のある業界に身を置き、自分を成長させたいたいと考え始め、エンジニアへの転職を考えています。
+                        現在は独学であったり友人に教えてもらいながらであったりで転職に向けた準備をしており、将来的にはブロックチェーンに魅力を感じているのでその業界に携わっていきたいと考えています。
+                    </p>
+                </div>
+            </section>
+
+            <!-- Hobby -->
+            <section class="body_main">
+                <a id="hobby">
+                    <header class="body_main_header">
+                        <h1>Hobby</h1>
+                    </header>
+                </a>
+                <div class="body_main_contents">
+                    <ul class="body_main_contents_list">
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Cafe1.jpeg">
+                            <span class="body_main_contents_list_colum_text">
+                                自宅の近くのカフェのモーニングです。
+                                <br>美味しいコーヒーを飲みながらよく作業をしたり読書をしたりしています。
+                            </span>
+                        </li>
+                        <li class="body_main_contents_list_colum">
+                            <img class="body_main_contents_list_colum_img" src="./img/Hobby1.jpeg">
+                            <span class="body_main_contents_list_colum_text">
+                                学生の頃に大好きなアーティスト、「WANIMA」のライブに行きました。
+
+                            </span>
+                        </li>
+                    </ul>
+                    <p class="body_main_contents_text">
+                        カフェに行ったり、スポーツをしたり、音楽を聴いたりと色々趣味があります。
+                        <br>上の写真（左）は自宅の近くのカフェなのですが、落ち着いた雰囲気で美味しいコーヒーを飲みながらよく作業や読書をしています。
+                        たまごサンドがモーニングで大好きなメニューだったのですが、最近無くなってしまい少しショックを受けています、、笑
+                        <br>音楽を聴くのも好きで、大好きなアーティストの「WANIMA」のライブに学生の頃行きました（写真右）。自分の好きな歌を歌って盛り上がれたのでより一層好きになりました。
+                        「WANIMA」以外にもよく邦楽のロックバンドをよく聴きます。
+                        <br>また、スポーツをするのも大好きなので、休みの日には会社の人たちとフットサルをしたり、別のコミュニティで学生の頃にやっていたハンドボールをしたりしています。
+                        スポーツは観るのも大好きなので、よくサッカー観戦をしたり、野球観戦をしたりしています。
+                    </p>
+                </div>
+            </section>
+
             <div class="body_footer">
                 <!-- SNSのリンク -->
                 <div>Account</div>
-                <div class="body_footer_icon">
-                    <img class="body_footer_icon_twitter" src="./img/twitter.jpg">
-                    <img class="body_footer_icon_github" src="./img/github.png">
-                    <img class="body_footer_icon_wantedly" src="./img/wantedly.png">
-                    <!-- <div>Twitter</div>
-                    <div>gitHub</div>
-                    <div>Wantedly</div> -->
-                </div>
+                <ul class="body_footer_icon">
+                    <li>
+                        <a class="body_footer_icon_link" href="https://twitter.com/tekitou0110" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="body_footer_icon_link" href="https://github.com/mm-masahiro" target="_blank">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a class="body_footer_icon_link">
+                    </li>
+                    <li>
+                        <a class="body_footer_icon_link" href="https://www.facebook.com/profile.php?id=100024837240686" target="_blank">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a class="body_footer_icon_link">
+                    </li>
+                </ul>
             </div>
 
         </div>
