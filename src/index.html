@@ -7,65 +7,38 @@
     </head>
 
     <body class="top">
-        <div class="body">
-            <!-- ヘッダー -->
-            <div class="body_head">
-                <!-- タイトル -->
-                <div class="body_head_title">Myportfolio</div>
-                <!-- ハンバーガーメニュー -->
-                <div class="body_head_menu" id="show">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="body_head_menu_list">
-                    <ul class="body_head_menu_list_contents" id="list">
-                        <li>
-                            <a class="body_head_menu_list_contents_link" href="#about">
-                            About
-                            </a>
-                        </li>
-                        <li>
-                            <a class="body_head_menu_list_contents_link" href="#job">
-                                Job
-                            </a>
-                        </li>
-                        <li>
-                            <a class="body_head_menu_list_contents_link" href="#hobby">
-                                Hobby
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div>
+            <header  class="header">
+                <p class="header_title">Masahiro's Portfolio</p>
+                <ul class="header_menu">
+                    <li class="header_munu_list">
+                        <a class="header_munu_list_link" href="#about">
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li class="header_munu_list">
+                        <a class="header_munu_list_link" href="#job">
+                            <p>Job</p>
+                        </a>
+                    </li>
+                    <li class="header_munu_list">
+                        <a class="header_munu_list_link" href="#hobby">
+                            <p>Hobby</p>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div>
+                <h1 class="body_title">Masahiro's Portfolio</h1>
+                <img class="body_img" src="./img/TokyoSta.jpg">
             </div>
-            
-            <!-- リンク -->
-            <div class="body_page">
-                <div>
-                    <a href="#about">
-                        <p class="text_page">About</p>
-                        <img class="img_page" src="./img/about.jpeg">
-                    </a href="#about">
-                </div>
-                <div>
-                    <a href="#job">
-                        <p class="text_page">Job</p>
-                        <img class="img_page" src="./img/ws.jpg">
-                    </a href="#job">
-                </div>
-                <div>
-                    <a href="#hobby">
-                        <p class="text_page">Hobby</p>
-                        <img class="img_page" src="./img/cafe.jpg">
-                    </a>
-                </div>
-            </div>
-            
+
             <!-- About -->
             <section class="body_main">
                 <a id="about">
-                    <header class="body_main_header">
-                        <h1>About</h1>
+                    <header>
+                        <h2>About</h2>
                     </header>
                 </a>
                 <div class="body_main_contents">
@@ -73,7 +46,7 @@
                         <li class="body_main_contents_list_colum">
                             <img class="body_main_contents_list_colum_img" src="./img/Hand.jpeg">
                             <span class="body_main_contents_list_colum_text">
-                                高校生の時にハンドボールを始め、大学生になっても部活に入り続けていました！
+                                高校生の時にハンドボールを始め、大学生になっても部活に入って続けていました！
                                 <br>大学４回生の最後の大会の際の写真です。
                             </span>
                         </li>
@@ -88,7 +61,6 @@
                     </ul>
                     <p class="body_main_contents_text">
                         こんにちは！都内で証券会社に勤めている森永 雅大と申します！岡山県出身で大学は香川大学だったのですが、支店配属が都内になり19年の4月に上京しました。
-                        <!-- みずほ証券に勤めており、主に法人やそのオーナー・社長をターゲットとした新規開拓に取り組んでいます。IT業界の成長生に魅力を感じ転職を考えています。 -->
                         <br>学生の頃は、ハンドボール部に所属しており週4日以上の練習を４年間、最後までやり抜きました！また、キャプテンの経験もさせてもらい、チームの課題は何か、それを克服するためにどうすれば良いかということを常に考えながら練習に取り組みました。
                         <br>幼い頃から負けず嫌いで、自分が「負けたくない」と感じたもの（部活のレギュラー争いや、好きな教科の勉強など）に対しては、結果を残せるように努めてきました。この性格もあってか、日々自分を成長させることのできる環境に身をおきたいと考えています。
                     </p>
@@ -98,8 +70,8 @@
             <!-- Job -->
             <section class="body_main">
                 <a id="job">
-                    <header class="body_main_header">
-                        <h1>Job</h1>
+                    <header>
+                        <h2>Job</h2>
                     </header>
                 </a>
                 <div class="body_main_contents">
@@ -133,8 +105,8 @@
             <!-- Hobby -->
             <section class="body_main">
                 <a id="hobby">
-                    <header class="body_main_header">
-                        <h1>Hobby</h1>
+                    <header>
+                        <h2>Hobby</h2>
                     </header>
                 </a>
                 <div class="body_main_contents">
@@ -166,8 +138,7 @@
                 </div>
             </section>
 
-            <div class="body_footer">
-                <!-- SNSのリンク -->
+            <footer class="body_footer">
                 <div>Account</div>
                 <ul class="body_footer_icon">
                     <li>
@@ -186,12 +157,10 @@
                         </a class="body_footer_icon_link">
                     </li>
                 </ul>
-            </div>
-
+            </footer>
+            
         </div>
 
         <script src="main.js"></script>
-
-        </div>
     </body>
 </html>

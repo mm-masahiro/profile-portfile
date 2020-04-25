@@ -11,141 +11,93 @@
     width: 100%;
     overflow-x: hidden;
     margin: 0;
-}
-
-.body {
-    background-color: #b9b9b9;
-}
-
-.body_head {
-    height: 400px;
-    width: 100%;
-    background-image: url("./img/TokyoSta.jpg");
-    background-size: 100% 400px;
-    opacity: 0.6;
-    background-repeat: no-repeat;
-
-    .body_head_title {
-        text-align: center;
-        color: #f4b052;
-        font-size: 100px;
-        opacity: 1;
-    }
-
-    .body_head_menu {
-        height: 30px;
-        width: 30px;
-        position: fixed;
-        right: 5px;
-        top: 5px;
-        cursor: pointer;
-    }
-
-    .body_head_menu div {
-        height: 5px;
-        width: 30px;
-        background: #000;
-        position: absolute;
-    }
-
-    .body_head_menu div:nth-of-type(1) {
-        top: 10px;
-    }
-
-    .body_head_menu div:nth-of-type(3) {
-        top: 20px;
-    }
-
-    .body_head_menu_list_contents {
-        list-style: none;
-        position: fixed;
-        right: -60px;
-        top: 30px;
-        transition: 0.3s;
-        padding: 0;
-
-        .body_head_menu_list_contents_link {
-            text-decoration: none;
-            color: #fff;
-        }
-    }
-
-    .body_head_menu_list_contents.open {
-        right: 0;
-    }
-
-}
-
-
-.body_page{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    position: relative;
-
-    .img_page {
-        width: 300px;
-        height: 100%;
-    }
-
-    .text_page {
-        position: absolute;
-        margin: 0;
+    
+    .header {
+        display: flex;
+        position: relative;
+        box-shadow: 0 5px rgba(0,0,0,0.1);
+        background-color: #3484cb;
         color: #fff;
-        top: 50%;
-    }
-}
 
-.body_main {
-    padding: 100px;
-    padding-bottom: 0;
+        .header_title {
+            padding: 0 8px;
+        }
 
-    .body_main_contents_list {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        padding: 0;
-
-        .body_main_contents_list_colum {
+        .header_menu {
             display: flex;
-            flex-direction: column;
+            list-style: none;
+            margin: 0;
 
-            .body_main_contents_list_colum_img {
-                height: auto;
-                width: 300px;
-            }
+            .header_munu_list {
+                padding: 0 8px;
 
-            .body_main_contents_list_colum_text {
-                width: 300px;
-                font-size: 12px;
-                margin: 0;
+                .header_munu_list_link {
+                    text-decoration: none;
+                    color: #fff;
+                }
             }
         }
     }
 
-    .body_main_contents_text {
-        padding: 50px;
+    .body_title {
+        text-align: center;
+        font-size: 80px;
     }
 
+    .body_img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .body_main {
+        padding: 100px;
+        padding-bottom: 0;
 
-}
-
-.body_footer {
-    margin-top: 50px;
-    text-align: center;
-
-    .body_footer_icon {
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        margin: 0;
-        padding: 10px;
-
-        .body_footer_icon_link {
-            color: #000;
+        
+        .body_main_contents_list {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+            
+            .body_main_contents_list_colum {
+                display: flex;
+                flex-direction: column;
+                
+                .body_main_contents_list_colum_img {
+                    height: auto;
+                    width: 300px;
+                }
+                
+                .body_main_contents_list_colum_text {
+                    width: 300px;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
+        }
+        
+        .body_main_contents_text {
+            padding: 50px;
+        }
+        
+        
+    }
+    
+    .body_footer {
+        margin-top: 50px;
+        text-align: center;
+        
+        .body_footer_icon {
+            display: flex;
+            justify-content: center;
+            list-style: none;
             padding: 10px;
-        } 
+            
+            .body_footer_icon_link {
+                color: #000;
+                padding: 10px;
+            } 
+        }
     }
 }
