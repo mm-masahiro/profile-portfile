@@ -9,187 +9,95 @@
 
 .top {
     width: 100%;
-    margin: 0;
     overflow-x: hidden;
-}
+    margin: 0;
+    
+    .header {
+        display: flex;
+        position: relative;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+        height: 60px;
 
-.body {
-    background-color: #b9b9b9;
-}
+        .header_title {
+            padding: 0 8px;
+        }
 
-.body_head {
-    height: 400px;
-    width: 100%;
-    background-image: url("./img/TokyoSta.jpg");
-    background-size: 100% 400px;
-    opacity: 0.6;
-    color: #fff;
-    background-repeat: no-repeat;
+        .header_menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
 
-    .body_head_title {
+            .header_munu_list {
+                padding: 0 8px;
+
+                .header_munu_list_link {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .body_title {
         text-align: center;
-        color: #f4b052;
-        font-size: 100px;
-        opacity: 1;
+        font-size: 80px;
     }
 
-    .body_head_menu {
-        height: 30px;
-        width: 30px;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        cursor: pointer;
+    .body_img {
+        width: 980px;
+        height: auto;
     }
+    
+    .body_main {
+        padding: 100px;
+        padding-bottom: 0;
 
-    .body_head_menu div {
-        height: 5px;
-        width: 30px;
-        background: #000;
-        position: absolute;
-    }
-
-    .body_head_menu div:nth-of-type(1) {
-        top: 10px;
-    }
-
-    .body_head_menu div:nth-of-type(3) {
-        top: 20px;
-    }
-
-    .body_head_menu_list_contents {
-        list-style: none;
-        position: absolute;
-        right: -60px;
-        top: 30px;
-        transition: 0.3s;
-        padding: 0;
-    }
-
-    .body_head_menu_list_contents.open {
-        right: 0;
-    }
-
-}
-
-
-.body_main {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-
-
-    .body_main_upside {
-        display: flex;
-        justify-content: center;
-        height: 200px;
-        position: relative;
-
-        .img_about{
-            width: 300px;
-            height: 100%;
-        }
-        .img_job {
-            width: 300px;
-            height: 100%;
-        }
-        .img_travel {
-            width: 300px;
-            height: 100%;
-        }
-
-        .text_about {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
-        }
-
-        .text_job {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
-        }
-
-        .text_travel {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
-        }
-    }
-
-    .body_main_under {
-        display: flex;
-        justify-content: center;
-        height: 200px;
-        position: relative;
-
-        .img_sports {
-            width: 300px;
-            height: 100%;
-        }
-
-        .img_cafe {
-            width: 300px;
-            height: 100%;
-        }
-
-        .img_career {
-            width: 300px;
-            height: 100%;
+        
+        .body_main_contents_list {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            padding: 0;
+            
+            .body_main_contents_list_colum {
+                display: flex;
+                flex-direction: column;
+                
+                .body_main_contents_list_colum_img {
+                    height: auto;
+                    width: 300px;
+                }
+                
+                .body_main_contents_list_colum_text {
+                    width: 300px;
+                    font-size: 12px;
+                    margin: 0;
+                    color: rgba(0,0,0,0.4);
+                }
+            }
         }
         
-        .text_sports {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
+        .body_main_contents_text {
+            padding: 50px;
         }
-
-        .text_cafe {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
-        }
-
-        .text_career {
-            position: absolute;
-            margin: 0;
-            color: #fff;
-            top: 50%;
+        
+        
+    }
+    
+    .body_footer {
+        margin-top: 50px;
+        text-align: center;
+        
+        .body_footer_icon {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            
+            .body_footer_icon_link {
+                color: #000;
+                padding: 10px;
+            } 
         }
     }
-}
-
-.body_footer {
-    margin-top: 50px;
-    text-align: center;
-
-    .body_footer_icon {
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-    }
-        .body_footer_icon_twitter {
-            height: 30px;
-            width: 50px;
-        }
-        .body_footer_icon_github {
-            height: 30px;
-            width: 50px;
-        }
-        .body_footer_icon_wantedly {
-            height: 30px;
-            width: 50px;
-        }
-}
-
-.job {
-    background-image: url("./img/NY2.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: rgba(225, 225, 225, 0.3);
 }
