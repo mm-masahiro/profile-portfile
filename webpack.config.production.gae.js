@@ -12,23 +12,11 @@ module.exports = merge(baseConfig, {
   plugins: [
     new CopyPlugin([
       {
-        from: `${__dirname}/src/hobby.html`,
-        to: `${__dirname}/public`,
-      },
-      {
         from: `${__dirname}/src/index.html`,
         to: `${__dirname}/public`,
       },
       {
-        from: `${__dirname}/src/job.html`,
-        to: `${__dirname}/public`,
-      },
-      {
         from: `${__dirname}/src/react.html`,
-        to: `${__dirname}/public`,
-      },
-      {
-        from: `${__dirname}/src/student.html`,
         to: `${__dirname}/public`,
       },
     ]),
