@@ -6,6 +6,10 @@ module.exports = merge(baseConfig, {
   plugins: [
     new CopyPlugin([
       {
+        from: `${__dirname}/src/img`,
+        to: `${__dirname}/public/img`,
+      },
+      {
         from: `${__dirname}/src/hobby.html`,
         to: `${__dirname}/public`,
       },
