@@ -19,6 +19,7 @@
            height: 60px;
            min-width: 980px;
            position: relative;
+           margin-bottom: 56px;
 
            .header {
                height: 60px;
@@ -42,6 +43,7 @@
                     margin-inline-end: 0px;
                     color: #00a4bb;
                     padding: 8px 8px 7px 8px;
+                    font-weight: bold;
                 }
 
                 .header_menu {
@@ -81,13 +83,14 @@
             padding: 0;
             margin: 0 auto;
             width: 980px;
+            margin-bottom: 64px;
 
             .wrapper {
     
                 .wrapper_header {
+                    margin-bottom: 56px;
     
                     .wrapper_header_title {
-                        padding-top: 56px;
                         position: relative;
                         margin-bottom: 18px;
                     }
@@ -109,8 +112,8 @@
                     width: 680px; 
                                   
                     .body_main {
-                        margin-top: 56px;
-    
+                        margin-bottom: 56px;
+
                         .body_main_header {
                             margin-bottom: 40px;
                             position: relative;
@@ -143,6 +146,7 @@
                                     .body_main_contents_list_colum_img {
                                         height: auto;
                                         width: 300px;
+                                        margin-bottom: 10px;
                                     }
                                     
                                     .body_main_contents_list_colum_text {
@@ -150,14 +154,13 @@
                                         color: rgba(0,0,0,0.4);
                                         font-weight: 400;
                                         line-height: 1.33;
-                                        margin-top: 10px;
                                         display: inline-block;
                                     }
                                 }
                             }
     
                             .body_main_contents_text {
-                                margin-top: 26px;
+                                margin-bottom: 26px;
                                 font-size: 15px;
                                 line-height: 28px;
                                 font-weight: 400;
@@ -185,7 +188,6 @@
     
     
     .body_footer {
-        margin-top: 50px;
         text-align: center;
         
         .body_footer_icon {
