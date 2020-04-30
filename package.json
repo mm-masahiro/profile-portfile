@@ -58,7 +58,7 @@
     "precommit": "lint-staged",
     "imagemin": "gulp images",
     "deploy:gae": "npm run build:prod-gae && cd nginx && gcloud app deploy --quiet",
-    "format": "prettier --write './src/css/styles.scss'"
+    "format": "prettier --write './src/css' "
   },
   "husky": {
     "hooks": {
