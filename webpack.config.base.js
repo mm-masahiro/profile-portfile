@@ -20,6 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.scss|css$/,
+        exclude: /node_modules/,
         use: [
           "style-loader",
           {
@@ -29,6 +30,7 @@ module.exports = {
               importLoaders: 2,
             },
           },
+          { loader: "postcss-loader" },
           {
             loader: "sass-loader",
           },
@@ -44,7 +46,7 @@ module.exports = {
         loader: "babel-loader",
       },
       {
-        test: /\.tsx?$/,
+        test: /\.ts|tsx?$/,
         loader: "ts-loader",
       },
     ],
