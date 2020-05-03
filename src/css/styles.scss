@@ -6,41 +6,45 @@
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 415px) {
   .container_body {
     max-width: 100%;
     margin: 0;
 
-    // .body_img {
-    //   object-fit: contain;
+    .body_img {
+      object-fit: contain !important;
+    }
 
-    .body_main {
-      max-width: 100%;
+    .wrapper_contents {
+      padding: 0 15px !important;
 
-      .body_main_contents {
+      .body_main {
         max-width: 100%;
+        padding: 0 0 30px 0 !important;
+        border-bottom: 1px solid #e3e3e3;
+        .body_main_contents {
+          max-width: 100%;
 
-        // .body_main_contents_list {
-        //   display: flex;
-        //   flex-direction: column;
-        //   max-width: 100%;
-        //   margin: 0 0 30px 0 !important;
+          .body_main_contents_list {
+            max-width: 100%;
+            margin: 0 0 30px 0 !important;
 
-        // .body_main_contents_list_colum {
-        //   margin: 0 !important;
+            .body_main_contents_list_colum {
+              margin: 0 !important;
 
-        .body_main_contents_list_colum_text {
-          margin-bottom: 15px;
+              .body_main_contents_list_colum_text {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          //レスポンシブで変更が反映されない
+          // .body_main_contents_text {
+          //   font-size: 17px;
+          // }
         }
-        // }
-        // }
-
-        // .body_main_contents_text {
-        //   font-size: 19px;
-        // }
       }
     }
-    // }
   }
 }
 
@@ -136,9 +140,12 @@
               width: 100%;
               height: 100%;
 
-              @media screen and (max-width: 415px) {
-                object-fit: contain;
-              }
+              //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+              //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
+
+              // @media screen and (max-width: 415px) {
+              //   object-fit: contain;
+              // }
             }
           }
         }
@@ -146,8 +153,24 @@
         .wrapper_contents {
           padding: 40px 40px 108px 0;
 
+          //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+          //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
+
+          // @media screen and (max-width: 415px) {
+          //   padding: 0 15px;
+          // }
+
           .body_main {
             margin-bottom: 56px;
+
+            //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+            //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
+
+            // @media screen and (max-width: 415px) {
+            //   max-width: 100%;
+            //   margin: 0 0 30px 0;
+            //   border-bottom: 1px solid #e3e3e3;;
+            // }
 
             .body_main_header {
               margin-bottom: 40px;
@@ -169,12 +192,13 @@
                 margin: 0 0 30px -20px;
                 width: 680px;
 
-                @media screen and (max-width: 415px) {
-                  display: flex;
-                  flex-direction: column;
-                  max-width: 100%;
-                  margin: 0 0 30px 0;
-                }
+                //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+                //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
+
+                //@media screen and (max-width: 415px) {
+                //  max-width: 100%;
+                //  margin: 0 0 30px 0 !important;
+                //}
 
                 .body_main_contents_list_colum {
                   display: flex;
@@ -182,9 +206,12 @@
                   margin: 0 20px;
                   width: 100%;
 
-                  @media screen and (max-width: 415px) {
-                    margin: 0;
-                  }
+                  //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+                  //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
+
+                  // @media screen and (max-width: 415px) {
+                  //   margin: 0;
+                  // }
 
                   .body_main_contents_list_colum_img {
                     height: auto;
@@ -209,8 +236,10 @@
                 font-weight: 400;
                 color: rgba(0, 0, 0, 0.84);
 
+                //一番上の@media screen~{}中で反映されなかったものをここで書くと反映されるようになる
+                //@media screen~{}の中で!importantをつけているプロパティでは全て同じ事象が発生しています
                 @media screen and (max-width: 415px) {
-                  font-size: 19px;
+                  font-size: 17px;
                 }
               }
             }
