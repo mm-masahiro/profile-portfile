@@ -1,0 +1,20 @@
+.body_footer {
+  text-align: center;
+  border-top: 1px solid #e3e3e3;
+  padding: 32px;
+}
+
+.footer_text {
+  margin-bottom: 24px;
+}
+
+.body_footer_icon {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+      
+.body_footer_icon_link {
+  color: #000;
+  padding: 10px;
+}

@@ -5,7 +5,7 @@ module.exports = {
   // エントリーポイントの設定
   entry: {
     main: `${__dirname}/src/js/index.js`,
-    app: `${__dirname}/src/react/app.tsx`,
+    app: `${__dirname}/src/react/app.ts`,
   },
 
   // 出力の設定
@@ -51,6 +51,6 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [".tsx", ".jsx", ".js", ".ts"],
+    extensions: [".jsx", ".js", ".ts", ".tsx"],
   },
 };

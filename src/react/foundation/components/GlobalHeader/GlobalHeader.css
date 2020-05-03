@@ -1,0 +1,47 @@
+
+.header {
+  display: flex;
+  height: 60px;
+  min-width: 980px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.header_title {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  color: #00a4bb;
+  padding: 8px 8px 7px 8px;
+  font-weight: bold;
+}
+
+.header_menu {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 8px 8px 7px 8px;
+  display: flex;
+  list-style: none;
+  margin: 0;  
+  align-items: center;
+}
+            
+.header_munu_list {
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.header_munu_list_link {
+  color: #000;
+  display: block;
+  padding: 0 8px;
+  text-decoration: none;
+}
+
+.header_munu_list_link:hover {
+    color: #00a4bb;
+}
