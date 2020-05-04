@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import MD from "react-markdown";
 
-import useSinglePost from "./useSinglePost";
+import useSinglePost from "../../domains/single-post/useSinglePost";
 import { readableDate } from "../../foundation/utils/helpers";
 import "./SinglePost.css";
 

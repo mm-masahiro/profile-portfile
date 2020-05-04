@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import usePosts from "./usePosts";
+import usePosts from "../../domains/posts/usePosts";
 import { readableDate } from "../../foundation/utils/helpers";
 import "./Posts.css";
 
