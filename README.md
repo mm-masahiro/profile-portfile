@@ -10,9 +10,6 @@ npm start
 - nginxはGAE(Google App Engine)デプロイ用
 - publicはNetlifyでのデプロイ用
 
-
-## このリポジトリを作成する中で学んだ事
-
 ## 使用した技術
 - HTML
 - CSS(Sass)
