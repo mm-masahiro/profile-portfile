@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap");
 @import "./tailwind.css";
 
+body {
+  position: relative;
+  cursor: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  cursor: none;
+  pointer-events: none; // 他の要素をクリックできなくならないように
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
 .top {
   min-height: 100%;
 }
@@ -33,9 +56,6 @@
 .header_title {
   display: block;
   margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
   color: #00a4bb;
   padding: 8px 8px 7px 8px;
   font-weight: bold;
@@ -199,6 +219,12 @@
     border-bottom: 1px solid #e3e3e3;
   }
 
+  .body_main_title {
+    font-size: 20px;
+    color: #656f72;
+    font-weight: normal;
+  }
+
   .body_main_contents {
     max-width: 100%;
   }
@@ -209,7 +235,7 @@
   }
 
   .body_main_contents_list_colum {
-    margin: 0;
+    margin: 0 5px;
   }
 
   .body_main_contents_list_colum_text {

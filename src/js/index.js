@@ -1,20 +1,23 @@
 import "../css/styles.scss";
 import "../css/reset.css";
 
-const contentful = require("contentful");
+function setUpCursor() {
+  const cursor = document.querySelector(".cursor");
+  const cursorWidth = 20; // カーソルの大きさ
+  let mouseX = 0; // マウスのX座標
+  let mouseY = 0; // マウスのY座標
 
-const client = contentful.createClient({
-  // This is the space ID. A space is like a project folder in Contentful terms
-  space: "",
-  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: "",
-});
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    cursor.style.display = "block";
+    cursor.style.left = `${mouseX - cursorWidth / 2}px`;
+    cursor.style.top = `${mouseY - cursorWidth / 2}px`;
+  });
+}
 
-// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
+function init() {
+  setUpCursor();
+}
 
-client
-  .getEntries({ content_type: "post" })
-  .then((response) => console.log(response.items))
-  .catch(console.error);
-
-console.log("hogehgoehgoehgoeho");
+init();

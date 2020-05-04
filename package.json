@@ -78,7 +78,10 @@
     }
   },
   "lint-staged": {
-    "*.scss": "stylelint",
+    "*.scss": [
+      "stylelint",
+      "prettier --write"
+    ],
     "*.{js,jsx}": [
       "eslint --fix"
     ]
