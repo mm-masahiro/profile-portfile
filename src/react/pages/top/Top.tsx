@@ -2,7 +2,6 @@ import * as React  from 'react';
 import { useEffect }  from 'react';
 import { GlobalHeader } from '../../foundation/components/GlobalHeader';
 import { GlobalFooter } from '../../foundation/components/GlobalFooter';
-import ContentClient, * as contentClient from '../../foundation/utils/content_client'
 import './Top.css'
 
 import { Link } from "react-router-dom";
@@ -18,10 +17,6 @@ export class Top extends React.Component<AppProps, AppState> {
     this.state = {
       items: []
     }
-  }
-
-  async componentDidMount() {
-    
   }
 
   render() {
