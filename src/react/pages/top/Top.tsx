@@ -23,14 +23,6 @@ export class Top extends React.Component<AppProps, AppState> {
     return (
       <div className="top">
         <GlobalHeader />
-        {
-          this.state.items.map(item => (
-            <div>
-              {/* {JSON.stringify(item)} */}
-              {item.fields.title}
-            </div>
-          ))
-        }
         <div>
           <Link to="/posts">posts</Link>
           <div>this is body</div>
