@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getBlogPosts } from "../contentful";
+import { getBlogPosts } from "../../foundation/utils/contentful";
 
 const promise = getBlogPosts();
 

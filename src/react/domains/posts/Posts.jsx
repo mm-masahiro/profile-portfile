@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { usePosts } from "../../custom-hooks";
-import { readableDate } from "../helpers";
+import usePosts from "./usePosts";
+import { readableDate } from "../../foundation/utils/helpers";
 import "./Posts.css";
 
 export default function Posts() {

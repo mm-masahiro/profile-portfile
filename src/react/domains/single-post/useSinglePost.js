@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getSinglePost } from "../contentful";
+import { getSinglePost } from "../../foundation/utils/contentful";
 
 export default function useSinglePost(slug) {
   const promise = getSinglePost(slug);

@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import { Top } from "../pages/top"
-import * as Posts from "../components/posts/Posts.jsx"
-import * as SinglePost from "../components/single-post/SinglePost.jsx"
+import * as Posts from "../domains/posts/Posts.jsx"
+import * as SinglePost from "../domains/single-post/SinglePost.jsx"
 
 // eslint-disable-next-line import/prefer-default-export
 export function Root() {
