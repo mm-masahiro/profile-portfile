@@ -21,8 +21,7 @@ export default function Posts() {
           />
         </div>
         <small>{readableDate(post.fields.date)}</small>
-        <h3>{post.fields.title}</h3>
-
+        <h3 className="posts__post__title">{post.fields.title}</h3>
         <p>{post.fields.description}</p>
       </Link>
     ));
@@ -30,8 +29,6 @@ export default function Posts() {
 
   return (
     <div className="posts__container">
-      <h2>Articles</h2>
-
       <div className="posts">{renderPosts()}</div>
     </div>
   );
