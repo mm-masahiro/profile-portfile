@@ -5,6 +5,8 @@ import { GlobalFooter } from '../../foundation/components/GlobalFooter';
 import ContentClient, * as contentClient from '../../foundation/utils/content_client'
 import './Top.css'
 
+import { Link } from "react-router-dom";
+
 type AppProps = {}
 
 type AppState = {}
@@ -35,6 +37,7 @@ export class Top extends React.Component<AppProps, AppState> {
           ))
         }
         <div>
+          <Link to="/posts">posts</Link>
           <div>this is body</div>
           <div>this is body</div>
           <div>this is body</div>
