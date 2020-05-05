@@ -166,6 +166,7 @@
 
 .body_footer {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .body_footer_icon {
@@ -207,12 +208,12 @@
   }
 
   .body_main_contents {
-    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .body_main_contents_list {
-    max-width: 100%;
     margin: 0 0 30px 0;
+    width: 600px;
   }
 
   .body_main_contents_list_colum {
