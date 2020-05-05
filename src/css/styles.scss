@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Josefin+Sans&display=swap");
 @import "./tailwind.css";
 
+body {
+  position: relative;
+  cursor: none;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  cursor: none;
+  pointer-events: none; // 他の要素をクリックできなくならないように
+}
+
 :root {
   scroll-behavior: smooth;
 }
