@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jquery: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -23,9 +24,11 @@ module.exports = {
   },
   plugins: [
     'react',
-    "prettier"
+    "prettier",
+    'jquery'
   ],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "func-names": 0
   },
 };

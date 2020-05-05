@@ -1,6 +1,27 @@
 import "../css/styles.scss";
 import "../css/reset.css";
 
+const $ = require("jquery");
+const Flipsnap = require("flipsnap");
+
+if (window.matchMedia("(max-width: 415px)").matches) {
+  $(function () {
+    Flipsnap("#about_slide", {
+      distance: 280,
+    });
+  });
+  $(function () {
+    Flipsnap("#job_slide", {
+      distance: 280,
+    });
+  });
+  $(function () {
+    Flipsnap("#hobby_slide", {
+      distance: 280,
+    });
+  });
+}
+
 function setUpCursor() {
   const cursor = document.querySelector(".cursor");
   const cursorWidth = 20; // カーソルの大きさ
