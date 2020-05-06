@@ -1,25 +1,37 @@
 import "../css/styles.scss";
 import "../css/reset.css";
 
-const $ = require("jquery");
 const Flipsnap = require("flipsnap");
 
-if (window.matchMedia("(max-width: 415px)").matches) {
-  $(function () {
-    Flipsnap("#about_slide", {
-      distance: 280,
+function setUpSlider() {
+  if (window.matchMedia("(max-width: 415px)").matches) {
+    const aboutSlide = Flipsnap("#about_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    const aboutSelect = document.querySelectorAll(".about_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < aboutSelect.length; i += 1) {
+        aboutSelect[i].classList.toggle("current");
+      }
     });
-  });
-  $(function () {
-    Flipsnap("#job_slide", {
-      distance: 280,
+
+    const jobSlide = Flipsnap("#job_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    const jobSelect = document.querySelectorAll(".job_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < jobSelect.length; i += 1) {
+        jobSelect[i].classList.toggle("current");
+      }
     });
-  });
-  $(function () {
-    Flipsnap("#hobby_slide", {
-      distance: 280,
+
+    const hobbySlide = Flipsnap("#hobby_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    const hobbySelect = document.querySelectorAll(".hobby_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < hobbySelect.length; i += 1) {
+        hobbySelect[i].classList.toggle("current");
+      }
     });
-  });
+  }
 }
 
 function setUpCursor() {
@@ -38,6 +50,7 @@ function setUpCursor() {
 }
 
 function init() {
+  setUpSlider();
   setUpCursor();
 }
 
