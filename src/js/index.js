@@ -5,7 +5,7 @@ const Flipsnap = require("flipsnap");
 
 function setUpSlider() {
   if (window.matchMedia("(max-width: 415px)").matches) {
-    const aboutSlide = Flipsnap("#about_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    Flipsnap("#about_slide", { distance: 275 });
     const aboutSelect = document.querySelectorAll(".about_select");
 
     document.addEventListener("fspointmove", function () {
