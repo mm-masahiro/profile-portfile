@@ -23,7 +23,7 @@ function setUpSlider() {
       }
     });
 
-    const hobbySlide = Flipsnap("#hobby_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    Flipsnap("#hobby_slide", { distance: 275 });
     const hobbySelect = document.querySelectorAll(".hobby_select");
 
     document.addEventListener("fspointmove", function () {
