@@ -14,7 +14,7 @@ function setUpSlider() {
       }
     });
 
-    const jobSlide = Flipsnap("#job_slide", { distance: 275 }); // eslint-disable-line no-unused-vars
+    Flipsnap("#job_slide", { distance: 275 });
     const jobSelect = document.querySelectorAll(".job_select");
 
     document.addEventListener("fspointmove", function () {
