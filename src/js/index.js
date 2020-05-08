@@ -5,30 +5,30 @@ const Flipsnap = require("flipsnap");
 
 function setUpSlider() {
   if (window.matchMedia("(max-width: 415px)").matches) {
-    Flipsnap("#about_slide", { distance: 275 });
-    const aboutSelect = document.querySelectorAll(".about_select");
+    Flipsnap("#about_slide", { distance: 260 });
+    const aboutSelects = document.querySelectorAll(".about_select");
 
     document.addEventListener("fspointmove", function () {
-      for (let i = 0; i < aboutSelect.length; i += 1) {
-        aboutSelect[i].classList.toggle("current");
+      for (let i = 0; i < aboutSelects.length; i += 1) {
+        aboutSelects[i].classList.toggle("current");
       }
     });
 
-    Flipsnap("#job_slide", { distance: 275 });
-    const jobSelect = document.querySelectorAll(".job_select");
+    Flipsnap("#job_slide", { distance: 260 });
+    const jobSelects = document.querySelectorAll(".job_select");
 
     document.addEventListener("fspointmove", function () {
-      for (let i = 0; i < jobSelect.length; i += 1) {
-        jobSelect[i].classList.toggle("current");
+      for (let i = 0; i < jobSelects.length; i += 1) {
+        jobSelects[i].classList.toggle("current");
       }
     });
 
-    Flipsnap("#hobby_slide", { distance: 275 });
-    const hobbySelect = document.querySelectorAll(".hobby_select");
+    Flipsnap("#hobby_slide", { distance: 260 });
+    const hobbySelects = document.querySelectorAll(".hobby_select");
 
     document.addEventListener("fspointmove", function () {
-      for (let i = 0; i < hobbySelect.length; i += 1) {
-        hobbySelect[i].classList.toggle("current");
+      for (let i = 0; i < hobbySelects.length; i += 1) {
+        hobbySelects[i].classList.toggle("current");
       }
     });
   }
