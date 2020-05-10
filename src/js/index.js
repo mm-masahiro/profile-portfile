@@ -1,25 +1,37 @@
 import "../css/styles.scss";
 import "../css/reset.css";
 
-const $ = require("jquery");
 const Flipsnap = require("flipsnap");
 
-if (window.matchMedia("(max-width: 415px)").matches) {
-  $(function () {
-    Flipsnap("#about_slide", {
-      distance: 280,
+function setUpSlider() {
+  if (window.matchMedia("(max-width: 415px)").matches) {
+    Flipsnap("#about_slide", { distance: 260 });
+    const aboutSelects = document.querySelectorAll(".about_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < aboutSelects.length; i += 1) {
+        aboutSelects[i].classList.toggle("current");
+      }
     });
-  });
-  $(function () {
-    Flipsnap("#job_slide", {
-      distance: 280,
+
+    Flipsnap("#job_slide", { distance: 260 });
+    const jobSelects = document.querySelectorAll(".job_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < jobSelects.length; i += 1) {
+        jobSelects[i].classList.toggle("current");
+      }
     });
-  });
-  $(function () {
-    Flipsnap("#hobby_slide", {
-      distance: 280,
+
+    Flipsnap("#hobby_slide", { distance: 260 });
+    const hobbySelects = document.querySelectorAll(".hobby_select");
+
+    document.addEventListener("fspointmove", function () {
+      for (let i = 0; i < hobbySelects.length; i += 1) {
+        hobbySelects[i].classList.toggle("current");
+      }
     });
-  });
+  }
 }
 
 function setUpCursor() {
@@ -38,6 +50,7 @@ function setUpCursor() {
 }
 
 function init() {
+  setUpSlider();
   setUpCursor();
 }
 

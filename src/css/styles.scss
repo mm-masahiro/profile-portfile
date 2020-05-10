@@ -231,7 +231,7 @@ body {
   }
 
   .body_main_contents_list {
-    margin: 0 0 30px 0;
+    margin: 0;
     width: 600px;
   }
 
@@ -241,5 +241,48 @@ body {
 
   .body_main_contents_list_colum_text {
     margin-bottom: 15px;
+  }
+
+  .pointer {
+    text-align: center;
+  }
+
+  .about_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .about_select.current {
+    background: #00a4bb;
+  }
+
+  .job_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .job_select.current {
+    background: #00a4bb;
+  }
+
+  .hobby_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .hobby_select.current {
+    background: #00a4bb;
   }
 }
