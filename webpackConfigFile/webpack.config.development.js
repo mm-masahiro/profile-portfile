@@ -5,7 +5,7 @@ const baseConfig = require("./webpack.config.base.js");
 
 module.exports = merge(baseConfig, {
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "../public"),
     filename: "[name].js",
     port: 8080,
   },
@@ -13,16 +13,16 @@ module.exports = merge(baseConfig, {
   plugins: [
     new CopyPlugin([
       {
-        from: `${__dirname}/src/img`,
-        to: `${__dirname}/public/img`,
+        from: path.join(__dirname, "../src/img"),
+        to: path.join(__dirname, "../public/img"),
       },
       {
-        from: `${__dirname}/src/index.html`,
-        to: `${__dirname}/public`,
+        from: path.join(__dirname, "../src/index.html"),
+        to: path.join(__dirname, "../public"),
       },
       {
-        from: `${__dirname}/src/react.html`,
-        to: `${__dirname}/public`,
+        from: path.join(__dirname, "../src/react.html"),
+        to: path.join(__dirname, "../public"),
       },
     ]),
   ],
