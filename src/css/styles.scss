@@ -185,18 +185,21 @@ body {
 
 .body_footer {
   text-align: center;
+  padding-bottom: 20px;
+}
+
+.body_footer_title {
+  margin-bottom: 20px;
 }
 
 .body_footer_icon {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 10px;
 }
 
-.body_footer_icon_link {
-  color: #000;
-  padding: 10px;
+.body_footer_icon_wrapper {
+  width: 60px;
 }
 
 @media screen and (max-width: 415px) {
@@ -226,12 +229,12 @@ body {
   }
 
   .body_main_contents {
-    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .body_main_contents_list {
-    max-width: 100%;
-    margin: 0 0 30px 0;
+    margin: 0;
+    width: 600px;
   }
 
   .body_main_contents_list_colum {
@@ -240,5 +243,48 @@ body {
 
   .body_main_contents_list_colum_text {
     margin-bottom: 15px;
+  }
+
+  .pointer {
+    text-align: center;
+  }
+
+  .about_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .about_select.current {
+    background: #00a4bb;
+  }
+
+  .job_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .job_select.current {
+    background: #00a4bb;
+  }
+
+  .hobby_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .hobby_select.current {
+    background: #00a4bb;
   }
 }

@@ -8,6 +8,7 @@
     "babel-preset-react-app": "^3.1.2",
     "contentful": "^7.14.4",
     "history": "^4.10.1",
+    "flipsnap": "^0.6.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
@@ -62,10 +63,10 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.production.js",
-    "build:prod-gae": "webpack --config webpack.config.production.gae.js && npm run imagemin",
-    "watch": "webpack --watch --config webpack.config.development.js",
-    "start": "webpack-dev-server --open --config webpack.config.development.js",
+    "build": "webpack --config ./webpack_configs/webpack.config.production.js",
+    "build:prod-gae": "webpack --config ./webpack_configs/webpack.config.production.gae.js && npm run imagemin",
+    "watch": "webpack --watch --config ./webpack_configs/webpack.config.development.js",
+    "start": "webpack-dev-server --open --config ./webpack_configs/webpack.config.development.js",
     "lint:css": "stylelint ./src/css",
     "precommit": "lint-staged",
     "imagemin": "gulp images",

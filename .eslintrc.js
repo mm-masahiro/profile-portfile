@@ -23,9 +23,10 @@ module.exports = {
   },
   plugins: [
     'react',
-    "prettier"
+    "prettier",
   ],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "func-names": 0
   },
 };
