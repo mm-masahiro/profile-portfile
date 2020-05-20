@@ -1,5 +1,31 @@
-.wrapper {
-  background-color: #eee;
+:root {
+  scroll-behavior: smooth;
+}
+
+.app {
   width: 100%;
-  min-width: 980px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container_header {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: relative;
+  margin-bottom: 56px;
+}
+
+.container_body {
+  padding: 0;
+  margin: 0 auto;
+  width: 980px;
+}
+
+@media screen and (max-width: 415px) {
+  .container_body {
+    max-width: 100%;
+    margin: 0;
+  }
 }
