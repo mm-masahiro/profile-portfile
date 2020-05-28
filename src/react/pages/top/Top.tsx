@@ -3,15 +3,21 @@ import { GlobalHeader } from '../../foundation/components/GlobalHeader';
 import { GlobalFooter } from '../../foundation/components/GlobalFooter';
 import './Top.css'
 import BodyHeader from '../../foundation/components/BodyHeader/BodyHeader';
-import BodyContents from '../../foundation/components/BodyContents/BodyContents'
+import BodyContents from '../../foundation/components/BodyContents/BodyContents';
+
+import { Link } from "react-router-dom";
 
 type AppProps = {}
 
 type AppState = {}
 
 export class Top extends React.Component<AppProps, AppState> {
+  state: any;
   constructor(props) {
     super(props);
+    this.state = {
+      items: []
+    }
   }
 
   render() {
@@ -21,6 +27,7 @@ export class Top extends React.Component<AppProps, AppState> {
           <GlobalHeader />
         </div>
         <div className="container_body">
+          <Link to="/posts">posts</Link>
           <div className="wrapper">
             <BodyHeader />
             <BodyContents />
