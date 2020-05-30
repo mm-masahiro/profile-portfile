@@ -1,8 +1,9 @@
-import * as React  from 'react';
-import { useEffect }  from 'react';
+import * as React from 'react';
 import { GlobalHeader } from '../../foundation/components/GlobalHeader';
 import { GlobalFooter } from '../../foundation/components/GlobalFooter';
 import './Top.css'
+import BodyHeader from '../../foundation/components/BodyHeader/BodyHeader';
+import BodyContents from '../../foundation/components/BodyContents/BodyContents';
 
 import { Link } from "react-router-dom";
 
@@ -21,15 +22,16 @@ export class Top extends React.Component<AppProps, AppState> {
 
   render() {
     return (
-      <div className="top">
-        <GlobalHeader />
-        <div>
+      <div className="container">
+        <div className="container_header">
+          <GlobalHeader />
+        </div>
+        <div className="container_body">
           <Link to="/posts">posts</Link>
-          <div>this is body</div>
-          <div>this is body</div>
-          <div>this is body</div>
-          <div>this is body</div>
-          <div>this is body</div>
+          <div className="wrapper">
+            <BodyHeader />
+            <BodyContents />
+          </div>
         </div>
         <GlobalFooter />
       </div>

@@ -2,7 +2,6 @@
 .header {
   display: flex;
   height: 60px;
-  min-width: 980px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
 }
 
