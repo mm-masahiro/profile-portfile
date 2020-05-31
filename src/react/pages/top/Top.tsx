@@ -23,11 +23,11 @@ export class Top extends React.Component<AppProps, AppState> {
   render() {
     return (
       <div className="container">
+          <Link to="/posts">posts</Link>
         <div className="container_header">
           <GlobalHeader />
         </div>
         <div className="container_body">
-          <Link to="/posts">posts</Link>
           <div className="wrapper">
             <BodyHeader />
             <BodyContents />

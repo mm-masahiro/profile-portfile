@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './About.css'
+import '../GlobalTopic/GlobalTopic.css'
 
 const About = () => {
   return (
@@ -15,17 +15,17 @@ const About = () => {
         <ul id="about_slide" className="body_main_contents_list">
           <li className="body_main_contents_list_colum">
             <img className="body_main_contents_list_colum_img" src="./img/about1.webp" loading="lazy" />
-              <span className="body_main_contents_list_colum_text">
-                高校生の時にハンドボールを始め、大学生になっても部活に入って続けていました！<br />
-                大学４回生の最後の大会の際の写真です。
-              </span>
+            <span className="body_main_contents_list_colum_text">
+              高校生の時にハンドボールを始め、大学生になっても部活に入って続けていました！<br />
+              大学４回生の最後の大会の際の写真です。
+            </span>
           </li>
           <li className="body_main_contents_list_colum">
             <img className="body_main_contents_list_colum_img" src="./img/about2.webp" loading="lazy" />
-              <span className="body_main_contents_list_colum_text">
-                みずほ証券（株）に新卒で19年4月に入社しました。<br />
-                営業として新規開拓に取り組んでいます。
-              </span>
+            <span className="body_main_contents_list_colum_text">
+              みずほ証券（株）に新卒で19年4月に入社しました。<br />
+              営業として新規開拓に取り組んでいます。
+            </span>
           </li>
         </ul>
 

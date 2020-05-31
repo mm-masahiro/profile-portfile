@@ -6,7 +6,11 @@ const baseConfig = require("./webpack.config.base.js");
 module.exports = merge(baseConfig, {
   devServer: {
     contentBase: path.join(__dirname, "../public"),
+    openPage: "react.html",
     filename: "[name].js",
+    historyApiFallback: {
+      rewrites: [{ from: /^\/*/, to: "./react.html" }],
+    },
     port: 8080,
   },
 
