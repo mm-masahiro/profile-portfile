@@ -6,7 +6,7 @@ module.exports = {
 
   // エントリーポイントの設定
   entry: {
-    // main: path.join(__dirname, "../src/js/index.js"),
+    main: path.join(__dirname, "../src/js/index.js"),
     app: path.join(__dirname, "../src/react/app.ts"),
   },
 
