@@ -5,7 +5,9 @@ const baseConfig = require("./webpack.config.base.js");
 
 module.exports = merge(baseConfig, {
   mode: "production",
-  openPage: "react.html",
+  devServer: {
+    openPage: "react.html",
+  },
   plugins: [
     new CopyPlugin([
       {
