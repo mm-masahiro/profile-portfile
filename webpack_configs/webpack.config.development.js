@@ -9,7 +9,7 @@ module.exports = merge(baseConfig, {
     openPage: "index.html",
     filename: "[name].js",
     historyApiFallback: {
-      rewrites: [{ from: /^\/*/, to: "./react.html" }],
+      rewrites: [{ from: /^\/*/, to: "./index.html" }],
     },
     port: 8080,
   },
