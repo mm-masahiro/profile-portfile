@@ -7,8 +7,9 @@
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
     "contentful": "^7.14.4",
-    "history": "^4.10.1",
+    "eclint": "^2.8.1",
     "flipsnap": "^0.6.3",
+    "history": "^4.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
@@ -85,6 +86,9 @@
     ],
     "*.{js,jsx}": [
       "eslint --fix"
+    ],
+    ".editconfig-checker": [
+      "eclint"
     ]
   },
   "repository": {
