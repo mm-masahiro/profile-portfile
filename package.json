@@ -87,7 +87,7 @@
     "*.{js,jsx}": [
       "eslint --fix"
     ],
-    ".editconfig-checker": [
+    ".editconfig": [
       "eclint"
     ]
   },
