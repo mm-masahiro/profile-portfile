@@ -1,4 +1,3 @@
-/* 共通のスタイル */
 .body_main {
   margin-bottom: 56px;
 }
@@ -91,6 +90,32 @@
   }
 
   .about_select.current {
+    background: #00a4bb;
+  }
+
+  .job_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .job_select.current {
+    background: #00a4bb;
+  }
+
+  .hobby_select {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+  }
+
+  .hobby_select.current {
     background: #00a4bb;
   }
 }
